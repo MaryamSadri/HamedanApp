@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/markerlayout"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <xyz.schwaab.avvylib.AvatarView
+            android:id="@+id/circle_Img_marker"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_marker_dialog_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            app:avvy_border_color="@color/grey400"
+            app:avvy_border_highlight_color="#ff5900"
+            app:avvy_border_highlight_color_end="#bf15bc"
+            app:avvy_border_thickness="2dp"
+            app:avvy_border_thickness_highlight="3dp"
+            app:avvy_distance_to_border="5dp"
+            app:avvy_highlighted="true"
+            app:avvy_loading_arches="5"
+            app:avvy_loading_arches_degree_area="90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintVertical_bias="0.144" />
+
+        <TextView
+            android:id="@+id/tv_marker_dialog_name"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue900"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_masiryabi_marker_dialog"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_toLeftOf="@id/circle_Img_marker"
+            android:background="@color/white_transparent"
+            android:drawableTop="@drawable/ic_directions_car"
+            android:text="مسیریابی"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_info_marker_dialog"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/white_transparent"
+            android:drawableTop="@drawable/ic_info"
+            android:text="اطلاعات"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/circle_Img_marker"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_marker_dialoga_address"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_marker_dialog_name"
+            android:layout_marginTop="205dp"
+            android:text="آدرس : استان همدان ، شهرستان کبودرآهنگ"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_marker_dialoga_distance"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_marker_dialoga_address"
+            android:layout_marginLeft="-213dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+

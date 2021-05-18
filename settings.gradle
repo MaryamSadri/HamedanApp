@@ -1,0 +1,2 @@
+rootProject.name = "hamedan appM"
+include ':app'

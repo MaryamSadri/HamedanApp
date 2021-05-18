@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_night"
+    android:paddingTop="80dp"
+    android:layoutDirection="rtl"
+
+    >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cardView_today"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_margin="16dp"
+            >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:id="@+id/weather_layout"
+                    >
+                 <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" همدان "
+                       android:id="@+id/tv_Cityname"
+                       android:textColor="#fff"
+                       android:textSize="25dp"
+                       android:layout_alignParentTop="true"
+                       android:layout_centerHorizontal="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/maxandminLayout"
+                        android:layout_below="@id/tv_Cityname"
+                        android:layout_alignParentLeft="true"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/status_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="1"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="sans"
+                            android:layout_toRightOf="@id/tv_status"
+                            android:textColor="#fff"
+                            android:textAlignment="center"
+                            />
+
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp"
+                        android:textSize="18sp"
+                        android:text="وضعیت فعلی : "
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="30dp"
+                        />
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_status"
+                        android:id="@+id/maxTempLayout"
+                        android:layout_marginTop="20dp"
+                        >
+
+                    <TextView
+                        android:id="@+id/tv_maxTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textDirection="ltr"
+
+                        android:text="20"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans"
+                        android:layout_toLeftOf="@id/temp_santigrad_max"
+                        android:textColor="#fff"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:id="@+id/temp_santigrad_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="normal"
+                        android:textSize="20sp"
+                        android:text="c"
+                        android:layout_marginTop="15dp"
+                        android:layout_toLeftOf="@id/Img_up"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/Img_up"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="50dp"
+                        android:src="@drawable/arrow_up" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/maxTempLayout"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_minTemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:text="20"
+                            android:textDirection="ltr"
+
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="sans"
+                            android:layout_toLeftOf="@id/temp_santigrad_min"
+                            android:textColor="#fff"
+                            android:textAlignment="center"
+                            />
+                        <TextView
+                            android:id="@+id/temp_santigrad_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:typeface="normal"
+                            android:textSize="20sp"
+                            android:text="c"
+                            android:layout_marginTop="15dp"
+                            android:layout_toLeftOf="@id/Img_down"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#fff"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/Img_down"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="50dp"
+                            android:src="@drawable/arrow_down" />
+                    </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_Cityname"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/weather_icon"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/temp"
+                            android:src="@drawable/pic_weather"
+                            android:textSize="70sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:id="@+id/temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textDirection="ltr"
+                            android:typeface="normal"
+                            android:textSize="60dp"
+                            android:text="20"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"
+                            />
+                        <TextView
+                            android:id="@+id/temp_santigrad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:typeface="normal"
+                            android:textSize="30sp"
+                            android:text="c"
+                            android:layout_marginTop="15dp"
+                            android:layout_toRightOf="@id/temp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#fff"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView_otherDay"
+            android:layout_below="@id/cardView_today"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+
+            >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forecast_Recycler"
+                    android:layout_marginBottom="5dp"
+                   />
+           </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+

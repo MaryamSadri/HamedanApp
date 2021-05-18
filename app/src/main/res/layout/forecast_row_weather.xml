@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="124dp"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_day_Forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="فردا"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/iv_weather_Forecast"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_day_Forecast"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/pic_weather"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_weather_Forecast"
+        android:id="@+id/maxTempLayout_Forecast"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_maxTemp_Forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="20"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans"
+            android:layout_toLeftOf="@id/temp_santigrad_max_Forecast"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/temp_santigrad_max_Forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="normal"
+            android:textSize="15sp"
+            android:text="&#8451;"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/Img_up_Forecast"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            />
+
+
+        <ImageView
+            android:id="@+id/Img_up_Forecast"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arrow_up" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maxTempLayout_Forecast"
+        android:id="@+id/minTempLayout_Forecast"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_minTemp_Forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="20"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans"
+            android:layout_toLeftOf="@id/temp_santigrad_min_Forecast"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/temp_santigrad_min_Forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="normal"
+            android:textSize="15sp"
+            android:text="&#8451;"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/Img_down_Forecast"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            />
+
+
+        <ImageView
+            android:id="@+id/Img_down_Forecast"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arrow_down" />
+    </RelativeLayout>
+</RelativeLayout>

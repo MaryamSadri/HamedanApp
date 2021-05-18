@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:background="#1f0be2"
+        android:layout_centerHorizontal="true"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/iv_multi_profile"
+        android:layout_width="230dp"
+        android:layout_height="140dp"
+        android:src="@drawable/profil_multi"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:textAllCaps="true"
+    android:textColor="#000000"
+    android:text="ADMIN"
+    android:layout_below="@id/iv_multi_profile"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/tv_show_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:textColor="#232222"
+        android:text="123456"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/tv_show_username"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_show_pass" />
+
+    <ImageView
+        android:id="@+id/iv_exit"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:src="@mipmap/exit"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/toolbar"
+        android:layout_margin="2dp"
+        android:src="@mipmap/edit" />
+
+</RelativeLayout>

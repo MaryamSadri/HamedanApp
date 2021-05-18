@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/layout_edit_profile"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="لطفا رمز عبور جدید را وارد کنید"
+        android:gravity="center"
+        android:id="@+id/et_edit_profile_pass"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="لطفا متن امنیتی جدید را وارد کنید"
+        android:gravity="center"
+        android:id="@+id/et_edit_profile_security"
+        />
+
+
+</LinearLayout>
